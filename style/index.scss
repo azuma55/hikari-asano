@@ -1,0 +1,96 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: 'Avenir';
+  overflow-x: hidden;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    vertical-align: baseline;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.bg{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../img/BG.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}
+
+.top{
+    position: absolute;
+    top: 36%;
+    width: 100%;
+    height: 20rem;
+    background-color: rgba(255,255,255,0.4);
+
+    h1{
+        color: #000;
+        font-size: 5rem;
+        margin: 2rem auto;
+        width: 20rem;
+        text-align: center;
+        letter-spacing: 0.2rem;
+        line-height: 5.5rem;
+
+        a:hover{
+            color: #FFC500;
+        }
+    }
+
+    .sns{
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+        width: 20rem;
+        margin: auto;
+
+        a:hover{
+            opacity: 0.4;
+        }
+    }
+
+    li{
+        width: 3rem;
+        margin-right: 2.5rem;
+        list-style: none;
+    }
+}
+
+@media all and (min-width: 849px) {
+    .top{
+        top: 45%;
+        left: 33%;
+        width: 35%;
+        height: 13rem;
+
+        h1{
+            width: 60%;
+            font-size: 4rem;
+        }
+
+    }
+}
